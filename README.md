@@ -1,0 +1,1 @@
+Jogo baseado no "Flappy Bird" desenvolvido com HTML5, CSS3 e JavaScript puros, durante um curso de Desenvolvimento Web. Para iniciar, basta dar um clique com o mouse, que também é utilizado para fazer o pato voar. O objetivo é não deixar o pato encostar nos tubos que aparecem ao longo do jogo.

@@ -1,0 +1,149 @@
+@font-face {
+    
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #07171b;
+    color: #fff;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+h1 {
+    font-family: 'Pixel', sans-serif;
+    font-size: 50px;
+    margin: 5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+[flappy-game] {
+    position: relative;
+    border: none;
+    min-height: 500px;
+    width: 1200px;
+    margin: 15px;
+    background: linear-gradient(-5deg, rgb(214, 86, 0), 30%, rgb(0, 40, 92));
+    overflow: hidden;
+}
+
+.restart-background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(39, 39, 39, 0.575);
+    z-index: 50;
+}
+
+.restart {
+    position: absolute;
+    color: white;
+    background-color: #132125;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    font-size: 60px;
+    font-family: 'Pixel';
+    padding: 2px 15px 15px 15px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: -2px -2px 1px 1px #07171b;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.restart:active {
+    position: relative;
+    top: -3px;
+    left: calc(50% - 3px);
+    transform: translateX(-50%);
+    box-shadow: none;
+}
+
+.duck {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select :none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+.pair-of-obstacles {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.obstacle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.obstacle .border {
+    height: 30px;
+    width: 100px;
+    border: 2px solid #000;
+}
+
+.obstacle .body {
+    height: 130px;
+    width: 90px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progress {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-family: 'Pixel';
+    font-size: 70px;
+    z-index: 10;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
