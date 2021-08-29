@@ -47,7 +47,7 @@ h1 {
     position: relative;
     border: none;
     min-height: 500px;
-    width: 1200px;
+    width: 400px;
     margin: 15px;
     background: linear-gradient(-5deg, rgb(214, 86, 0), 30%, rgb(0, 40, 92));
     overflow: hidden;
